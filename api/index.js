@@ -34,18 +34,6 @@ connectDB();
 const jwtSecret = "hello world";
 const bcryptSalt = bcrypt.genSaltSync(10);
 
-// Middleware to set CORS headers
-app.use((req, res, next) => {
-  // Allow requests from any origin
-  res.setHeader('Access-Control-Allow-Origin', 'https://chat-app-weum.vercel.app');
-  // Allow specific headers
-  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  // Allow specific methods
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-  // Continue to the next middleware
-  next();
-});
-
 async function getUserDataFromRequest(req){
   return new Promise((resolve,reject)=>{
     const token=req.cookies?.token;
