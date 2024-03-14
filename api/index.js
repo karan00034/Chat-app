@@ -11,7 +11,7 @@ const User=require("./models/User")
 const Message=require("./models/Message")
 
 const app=express();
-const allowCors = fn => async (req, res) => {
+/*const allowCors = fn => async (req, res) => {
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
   // Another common pattern
@@ -30,7 +30,7 @@ const allowCors = fn => async (req, res) => {
 
 // Apply allowCors middleware to all routes
 app.use(allowCors);
-
+*/
 dotenv.config();
 console.log(__dirname)
 app.use('/uploads',express.static(__dirname + '/uploads'));
