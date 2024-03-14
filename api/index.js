@@ -17,7 +17,7 @@ app.use('/uploads',express.static(__dirname + '/uploads'));
 app.use(cookieParser());
 app.use(express.json());
 app.use(cors({
-    origin:["https://chat-app-weum.vercel.app"],
+    origin:["https://chat-app-1-5xdp.onrender.com/"],
     methods:["POST","GET"],
     credentials:true,
 }))
