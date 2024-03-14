@@ -43,7 +43,7 @@ app.use(cors({
 }))
 
 const connectDB=()=>{
-    mongoose.connect("mongodb+srv://karan002:karanGHOST%402@cluster0.2wdki1h.mongodb.net/?retryWrites=true&w=majority").then(()=>{
+    mongoose.connect("your-mongodb-userid").then(()=>{
         console.log("Database connected");
     })
 }
