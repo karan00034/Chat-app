@@ -13,7 +13,7 @@ const Message=require("./models/Message")
 const app=express();
 const allowCors = fn => async (req, res) => {
   res.setHeader('Access-Control-Allow-Credentials', true);
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Origin', 'https://chat-app-weum.vercel.app');
   // Another common pattern
   // res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS, PATCH, DELETE, POST, PUT');
@@ -37,7 +37,7 @@ app.use('/uploads',express.static(__dirname + '/uploads'));
 app.use(cookieParser());
 app.use(express.json());
 app.use(cors({
-    origin:["https://chat-app-weum.vercel.app/"],
+    origin:["https://chat-app-weum.vercel.app"],
     methods:["POST","GET"],
     credentials:true,
 }))
