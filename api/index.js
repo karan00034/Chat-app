@@ -18,7 +18,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(cors({
     credentials:true,
-    origin:"https://chat-app-weum.vercel.app",
+    origin:"",
     methods:["POST","GET"]
 }))
 
