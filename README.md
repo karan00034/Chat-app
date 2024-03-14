@@ -7,13 +7,24 @@ It is a simple chat application built in MERN
 
 #installation
 
-#for client \n
-cd client \n
-npm install \n 
-npm run dev \n
+#for client 
 
-\n
-#for backend \n
-cd api \n
-npm install \n
-node index.js \n
+
+cd client 
+
+
+npm install  
+
+
+npm run dev 
+
+#for backend 
+
+
+cd api 
+
+
+npm install 
+
+
+node index.js
