@@ -9,7 +9,7 @@ It is a simple chat application built in MERN
 
 #for client \n
 cd client \n
-npm install \n
+npm install \n 
 npm run dev \n
 
 \n
