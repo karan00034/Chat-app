@@ -48,6 +48,10 @@ async function getUserDataFromRequest(req){
 
 }
 
+app.get('/',(req,res)=>{
+    res.json("hello");
+})
+
 
 
 app.post("/login",async(req,res)=>{
