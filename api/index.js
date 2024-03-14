@@ -37,7 +37,7 @@ const bcryptSalt = bcrypt.genSaltSync(10);
 // Middleware to set CORS headers
 app.use((req, res, next) => {
   // Allow requests from any origin
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Origin', 'https://chat-app-weum.vercel.app');
   // Allow specific headers
   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   // Allow specific methods
