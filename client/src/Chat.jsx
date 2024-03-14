@@ -6,7 +6,6 @@ import {uniqBy} from "lodash";
 import {UserContext} from "./UserContext.jsx";
 import axios from "axios";
 
-axios.defaults.baseURL = 'http://localhost:4040'; 
 
 export default function Chat(){
   const [ws,setWs] = useState(null);
