@@ -22,7 +22,7 @@ export default function Chat(){
     },[selectedUserId]);
 
     function connectToWs(){
-        const ws=new WebSocket('wss://chat-app-eight-ochre.vercel.app');
+        const ws=new WebSocket('wss://chat-app-eight-ochre.vercel.app:4040');
         setWs(ws);
         ws.addEventListener('message',handleMessage);
         ws.addEventListener('close',()=>{
