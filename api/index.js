@@ -29,7 +29,7 @@ const connectDB=()=>{
 }
 connectDB();
 
-const jwtSecret = process.env.JWT_SECRET;
+const jwtSecret = "hello world";
 const bcryptSalt = bcrypt.genSaltSync(10);
 
 async function getUserDataFromRequest(req){
